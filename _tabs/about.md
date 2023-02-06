@@ -5,8 +5,9 @@ order: 4
 ---
 
 
-> **Charlie gROOT**: 0xch4rli3
+# **Purpl3john**: 0xPurpl3john
 
-> **I am gROOT**
+### **Where all began!**
 
-**Try Harder!**
+#### **Try Harder!**
+
