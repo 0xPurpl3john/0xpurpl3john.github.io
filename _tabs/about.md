@@ -5,49 +5,37 @@ order: 4
 ---
 
 
-> # **Purpl3john**: `0xPurpl3john`
+> **Purpl3john**: `0xPurpl3john`
 
-> ### **Where all began!**
+> #### **Where all began!**
 
 #### **Try Harder!**
 
 ```Python
-import random
-import time
 import base64
+import random
+import string
 
-def display_message(message, border_char):
-    message_len = len(message)
-    border_len = message_len + 4
-    border = border_char * border_len
-    print(border)
-    print(border_char + " " + message + " " + border_char)
-    print(border)
-
-def random_char():
-    return chr(random.randint(33, 126))
-
-def random_message(message, hide_message):
-    message = list(message)
-    hidden_message = [" " for char in message]
+def xor_cipher(message, key):
+    encrypted = []
     for i, char in enumerate(message):
-        if i % hide_message == 0:
-            hidden_message[i] = char
-        message[i] = random_char()
-        time.sleep(0.01)
-        print("\033c", end="") # Limpa a tela
-        display_message("".join(hidden_message), "#")
-    print("\033c", end="") # Limpa a tela
-    display_message(message, "#")
+        encrypted.append(chr(ord(char) ^ ord(key[i % len(key)])))
+    return "".join(encrypted)
 
-def decode_message(encoded_message):
-    decoded_message = base64.b64decode(encoded_message).decode("utf-8")
-    return decoded_message
+def decrypt(encrypted_message, key):
+    decrypted = []
+    for i, char in enumerate(encrypted_message):
+        decrypted.append(chr(ord(char) ^ ord(key[i % len(key)])))
+    return "".join(decrypted)
 
-if __name__ == "__main__":
-    encoded_message = "Tm8gc3lzdGVtIGlzIHNlY3VyZS4gVGhpbmsgYWJvdXQgaXQu"
-    decoded_message = decode_message(encoded_message)
-    hide_message = 3
-    random_message(decoded_message, hide_message)
+def random_string(length):
+    letters = string.ascii_lowercase
+    return "".join(random.choice(letters) for i in range(length))
 
+encoded_message = "Tm8gc3lzdGVtIGlzIHNlY3VyZS4gVGhpbmsgYWJvdXQgaXQu"
+key = random_string(len(base64.b64decode(encoded_message)))
+message = base64.b64decode(encoded_message).decode("utf-8")
+encrypted_message = xor_cipher(message, key)
+
+print(decrypt(encrypted_message, key))
 ````
