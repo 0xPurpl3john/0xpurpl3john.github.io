@@ -82,7 +82,7 @@ img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
 # https://logopond.com/logos/d1b24933a1ad8f58c2c6fcb3fd92a71d.png
-avatar: /assets/img/sample/groot.jpg
+avatar: /assets/img/sample/purpl3john.png
 
 # boolean type, the global switch for ToC in posts.
 toc: true
