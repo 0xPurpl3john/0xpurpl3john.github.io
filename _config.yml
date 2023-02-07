@@ -21,7 +21,7 @@ timezone: America/Sao_Paulo
 
 title: 0xPurpl3john                          # the main title
 
-tagline: Where all began!   # it will display as the sub-title
+tagline: Where it all begins!   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.

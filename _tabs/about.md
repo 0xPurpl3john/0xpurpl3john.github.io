@@ -7,7 +7,7 @@ order: 4
 
 > **Jardim**: `0xPurpl3john`
 
-> ##### Where all began!
+> ##### Where it all begins!
 
 #### **Try Harder!**
 
