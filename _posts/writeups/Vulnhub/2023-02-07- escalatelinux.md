@@ -1,5 +1,5 @@
 ---
-title: Vulnhub - Brainpan
+title: Vulnhub - Escalate Linux
 categories: [Vulnhub]
 #tags: []
 render_with_liquid: false
