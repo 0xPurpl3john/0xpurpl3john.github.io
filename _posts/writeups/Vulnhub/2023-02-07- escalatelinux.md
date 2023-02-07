@@ -31,7 +31,7 @@ sudo nmap -sn 10.0.2.1-255
 
 ### Port Discovery
 
-Já com o IP alvo em mãos, foi utilizado o comando abaixo para obter mais informações a respeito das portas e serviços que estariam em funcionamento no alvo. O comando abaixo é dividido em duas partes, primeiramente ele realiza um escaneamento em todas as `65535 portas` existentes e as filtra, armazenando tudo na variável `ports` que é utilizada na segunda parte do comando.
+Já com o IP alvo em mãos, foi utilizado o comando abaixo para obter mais informações a respeito das portas e serviços que estariam em funcionamento no alvo. O comando abaixo é dividido em duas partes, primeiramente realiza um escaneamento em todas as `65535 portas` existentes e as filtra, armazenando tudo na variável `ports` que é utilizada na segunda parte do comando.
 
 ```bash
 ports=$(sudo nmap -p- -Pn --min-rate=1000 -T4 10.0.2.9 | grep ^[0-9] | cut -d '/' -f 1 | tr '\n' ',' | sed s/,$//) && sudo nmap -sV -p $ports 10.0.2.9
