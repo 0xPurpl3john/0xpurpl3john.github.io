@@ -9,7 +9,7 @@ order: 4
 
 > ##### Where it all begins!
 
-###### **Try Harder!**
+
 
 ```Python
 import base64
