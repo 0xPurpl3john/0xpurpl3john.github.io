@@ -39,7 +39,7 @@ ports=$(sudo nmap -p- -Pn --min-rate=1000 -T4 10.0.2.9 | grep ^[0-9] | cut -d '/
 
 ![scan nmap ports 10.0.2.9](/assets/img/Vulnhub/escalate_linux/scannmapports.png)
 
-## Enumeração
+## Enumeration
 
 ### Port 80 - Apache httpd 2.4.29
 
