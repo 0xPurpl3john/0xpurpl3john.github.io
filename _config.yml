@@ -19,7 +19,7 @@ timezone: America/Sao_Paulo
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 0xPurpl3john                          # the main title
+title: Nextroid                          # the main title
 
 tagline: Where it all begins!   # it will display as the sub-title
 
@@ -27,23 +27,22 @@ description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://0xPurpl3john.github.io'
+url: 'https://nextroid.github.io'
 
 github:
-  username: 0xPurpl3john             # change to your github username
+  username: nextroid             # change to your github username
 
 twitter:
-  username: 0xPurpl3john            # change to your twitter username
+  username: nextroid            # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: 0xPurpl3john
-  email: 0xPurpl3john@noreply.com             # change to your email address
+  name: nextroid
+  email: nextroid@noreply.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/0xPurpl3john      # change to your twitter homepage
-    - https://github.com/0xPurpl3john       # change to your github homepage
+    - https://github.com/nextroid      # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -91,7 +90,7 @@ comments:
   active: disqus  # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
-    shortname: 0xPurpl3john    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname: nextroid    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
     repo:         # <gh-username>/<repo>
